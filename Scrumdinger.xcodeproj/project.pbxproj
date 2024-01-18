@@ -14,6 +14,7 @@
 		07CBD4FE2B56E4B6000B6B92 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CBD4FD2B56E4B6000B6B92 /* Theme.swift */; };
 		07CBD5002B56E550000B6B92 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CBD4FF2B56E550000B6B92 /* DailyScrum.swift */; };
 		07CBD5022B56E67E000B6B92 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CBD5012B56E67E000B6B92 /* CardView.swift */; };
+		07E198232B5941DE008CC276 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		07CBD4FD2B56E4B6000B6B92 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		07CBD4FF2B56E550000B6B92 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		07CBD5012B56E67E000B6B92 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				07CBD4EE2B56DAB4000B6B92 /* ScrumdingerApp.swift */,
 				07CBD4F02B56DAB4000B6B92 /* MeetingView.swift */,
 				07CBD5012B56E67E000B6B92 /* CardView.swift */,
+				07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */,
 				07CBD4F22B56DABC000B6B92 /* Assets.xcassets */,
 				07CBD4F42B56DABC000B6B92 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				07CBD4FE2B56E4B6000B6B92 /* Theme.swift in Sources */,
 				07CBD4F12B56DAB4000B6B92 /* MeetingView.swift in Sources */,
 				07CBD4EF2B56DAB4000B6B92 /* ScrumdingerApp.swift in Sources */,
+				07E198232B5941DE008CC276 /* TrailingIconLabelStyle.swift in Sources */,
 				07CBD5022B56E67E000B6B92 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
