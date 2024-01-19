@@ -18,9 +18,12 @@ struct DetailView: View {
         List {
             
             Section {
-                Label(scrum.title, systemImage: "timer")
-                    .font(.headline)
-                    .foregroundColor(.accentColor)
+                
+                NavigationLink(destination: MeetingView()) {
+                    Label("Start Meeting", systemImage: "timer")
+                        .font(.headline)
+                        .foregroundColor(.accentColor)
+                }
                 
                 HStack {
                     Label("Length", systemImage: "clock")
@@ -42,7 +45,7 @@ struct DetailView: View {
                 .accessibilityElement(children: .combine)
                 
             } header: {
-                Text("Scrum Info")
+                Text("Meeting Info")
             }
             
             
@@ -57,6 +60,7 @@ struct DetailView: View {
             }
             
         }
+        .navigationTitle(scrum.title)
         
     }
     
