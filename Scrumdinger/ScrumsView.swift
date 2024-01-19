@@ -19,7 +19,7 @@ struct ScrumsView: View {
             
             List(scrums) { scrum in
                 
-                NavigationLink(destination: Text(scrum.title)) {
+                NavigationLink(destination: DetailView(scrum: scrum)) {
                 
                     CardView(scrum: scrum)
                     
