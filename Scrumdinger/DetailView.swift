@@ -15,42 +15,47 @@ struct DetailView: View {
     
     var body: some View {
         
-        List() {
+        List {
             
             Section {
-                
                 Label(scrum.title, systemImage: "timer")
                     .font(.headline)
-                    .foregroundColor(scrum.theme.accentColor)
+                    .foregroundColor(.accentColor)
                 
                 HStack {
-                    
                     Label("Length", systemImage: "clock")
-                    
                     Spacer()
-                    
                     Text("\(scrum.lengthInMinutes) minutes")
+                }
+                .accessibilityElement(children: .combine)
+                
+                HStack {
+                    Label("Theme", systemImage: "paintpalette")
+                    Spacer()
+                    Text(scrum.theme.name)
+                        .padding(4)
+                        .foregroundColor(scrum.theme.accentColor)
+                        .background(scrum.theme.mainColor)
+                        .cornerRadius(4)
                     
                 }
+                .accessibilityElement(children: .combine)
                 
             } header: {
                 Text("Scrum Info")
             }
-            .accessibilityElement(children: .combine)
             
-            HStack {
+            
+            Section {
                 
-                Label("Theme", systemImage: "paintpalette")
+                ForEach(scrum.attendees) { attendee in
+                    Label(attendee.name, systemImage: "person")
+                }
                 
-                Spacer()
-                
-                Text(scrum.theme.name)
-                    .padding(4)
-                    .foregroundColor(scrum.theme.accentColor)
-                    .background(scrum.theme.mainColor)
-                    .cornerRadius(4)
-                
+            } header: {
+                Text("Attendees")
             }
+            
         }
         
     }
