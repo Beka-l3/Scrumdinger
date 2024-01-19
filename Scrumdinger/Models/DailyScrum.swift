@@ -8,7 +8,9 @@
 import Foundation
 
 
-struct DailyScrum {
+struct DailyScrum: Identifiable {
+    
+    let id = UUID()
     
     let title: String
     

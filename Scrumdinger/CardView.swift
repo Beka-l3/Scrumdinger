@@ -42,7 +42,6 @@ struct CardView: View {
         .frame(height: 60)
         .padding()
         .foregroundColor(scrum.theme.accentColor)
-        .background(scrum.theme.mainColor)
         
     }
     
@@ -56,6 +55,7 @@ struct CardView_Previews: PreviewProvider {
     
     static var previews: some View {
         CardView(scrum: scrum)
+            .background(scrum.theme.mainColor)
     }
     
 }
