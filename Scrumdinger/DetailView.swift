@@ -15,15 +15,42 @@ struct DetailView: View {
     
     var body: some View {
         
-        ZStack {
+        List() {
             
-            scrum.theme.mainColor
-                .ignoresSafeArea()
+            Section {
+                
+                Label(scrum.title, systemImage: "timer")
+                    .font(.headline)
+                    .foregroundColor(scrum.theme.accentColor)
+                
+                HStack {
+                    
+                    Label("Length", systemImage: "clock")
+                    
+                    Spacer()
+                    
+                    Text("\(scrum.lengthInMinutes) minutes")
+                    
+                }
+                
+            } header: {
+                Text("Scrum Info")
+            }
+            .accessibilityElement(children: .combine)
             
-            Text(scrum.title)
-                .font(.title)
-                .foregroundColor(scrum.theme.accentColor)
-            
+            HStack {
+                
+                Label("Theme", systemImage: "paintpalette")
+                
+                Spacer()
+                
+                Text(scrum.theme.name)
+                    .padding(4)
+                    .foregroundColor(scrum.theme.accentColor)
+                    .background(scrum.theme.mainColor)
+                    .cornerRadius(4)
+                
+            }
         }
         
     }
