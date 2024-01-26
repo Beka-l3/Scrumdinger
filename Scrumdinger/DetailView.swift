@@ -18,7 +18,7 @@ struct DetailView: View {
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
-                NavigationLink(destination: MeetingView()) {
+                NavigationLink(destination: MeetingView(scrum: $scrum)) {
                     Label("Start Meeting", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
@@ -76,12 +76,8 @@ struct DetailView: View {
 }
 
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            
-            DetailView(scrum: .constant(DailyScrum.sampleData[0]))
-            
-        }
+#Preview {
+    NavigationStack {
+        DetailView(scrum: .constant(DailyScrum.sampleData[0]))
     }
 }

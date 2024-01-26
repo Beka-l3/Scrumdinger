@@ -70,8 +70,6 @@ struct DetailEditView: View {
     }
 }
 
-struct DetailEditView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
-    }
+#Preview {
+    DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
 }
