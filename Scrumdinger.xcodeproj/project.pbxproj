@@ -26,6 +26,7 @@
 		07CBD5002B56E550000B6B92 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CBD4FF2B56E550000B6B92 /* DailyScrum.swift */; };
 		07CBD5022B56E67E000B6B92 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CBD5012B56E67E000B6B92 /* CardView.swift */; };
 		07E198232B5941DE008CC276 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */; };
+		07F8136C2B63ED8800CA90FC /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8136B2B63ED8800CA90FC /* NewScrumSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		07CBD4FF2B56E550000B6B92 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		07CBD5012B56E67E000B6B92 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		07F8136B2B63ED8800CA90FC /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				07AD90F82B5AC8E300406500 /* ScrumsView.swift */,
 				07CBD5012B56E67E000B6B92 /* CardView.swift */,
+				07F8136B2B63ED8800CA90FC /* NewScrumSheet.swift */,
 				072D1D222B63720D00C166E1 /* DetailView */,
 				072D1D212B6371F700C166E1 /* MeetingView */,
 			);
@@ -247,6 +250,7 @@
 				07CA18B12B635BE400F95D21 /* MeetingHeaderView.swift in Sources */,
 				07CBD4FE2B56E4B6000B6B92 /* Theme.swift in Sources */,
 				07CBD4F12B56DAB4000B6B92 /* MeetingView.swift in Sources */,
+				07F8136C2B63ED8800CA90FC /* NewScrumSheet.swift in Sources */,
 				07AD91012B5AFDF000406500 /* ThemePickerView.swift in Sources */,
 				072D1D172B6364B300C166E1 /* ScrumTimer.swift in Sources */,
 				07AD90F92B5AC8E300406500 /* ScrumsView.swift in Sources */,
