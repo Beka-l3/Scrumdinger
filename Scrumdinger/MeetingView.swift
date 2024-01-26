@@ -11,7 +11,7 @@ import SwiftUI
 struct MeetingView: View {
     
     @Binding var scrum: DailyScrum
-    @StateObject var scrumTImer: ScrumTimer = .init()
+    @StateObject var scrumTimer: ScrumTimer = .init()
     
     
     var body: some View {
@@ -22,8 +22,8 @@ struct MeetingView: View {
             
             VStack {
                 MeetingHeaderView(
-                    secondsElapsed: scrumTImer.secondsElapsed,
-                    secondsRemaining: scrumTImer.secondsRemaining,
+                    secondsElapsed: scrumTimer.secondsElapsed,
+                    secondsRemaining: scrumTimer.secondsRemaining,
                     theme: scrum.theme
                 )
                 
@@ -42,6 +42,13 @@ struct MeetingView: View {
         }
         .padding()
         .foregroundStyle(scrum.theme.accentColor)
+        .onAppear {
+            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+            scrumTimer.startScrum()
+        }
+        .onDisappear {
+            scrumTimer.stopScrum()
+        }
         .navigationBarTitleDisplayMode(.inline)
         
     }
