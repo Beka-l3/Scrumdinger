@@ -70,6 +70,55 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		072D1D1F2B63719E00C166E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07AD90F82B5AC8E300406500 /* ScrumsView.swift */,
+				07CBD5012B56E67E000B6B92 /* CardView.swift */,
+				072D1D222B63720D00C166E1 /* DetailView */,
+				072D1D212B6371F700C166E1 /* MeetingView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		072D1D202B6371C900C166E1 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				07CA18B22B63613D00F95D21 /* ScrumProgressViewStyle.swift */,
+				07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		072D1D212B6371F700C166E1 /* MeetingView */ = {
+			isa = PBXGroup;
+			children = (
+				07CBD4F02B56DAB4000B6B92 /* MeetingView.swift */,
+				072D1D182B63663C00C166E1 /* MeetingFooterView.swift */,
+				07CA18B02B635BE400F95D21 /* MeetingHeaderView.swift */,
+			);
+			path = MeetingView;
+			sourceTree = "<group>";
+		};
+		072D1D222B63720D00C166E1 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				07AD90FA2B5ACE8200406500 /* DetailView.swift */,
+				07AD90FC2B5AEA4A00406500 /* DetailEditView.swift */,
+				072D1D232B63721E00C166E1 /* ThemeView */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		072D1D232B63721E00C166E1 /* ThemeView */ = {
+			isa = PBXGroup;
+			children = (
+				07AD90FE2B5AFD7500406500 /* ThemeView.swift */,
+				07AD91002B5AFDF000406500 /* ThemePickerView.swift */,
+			);
+			path = ThemeView;
+			sourceTree = "<group>";
+		};
 		07CBD4E22B56DAB3000B6B92 = {
 			isa = PBXGroup;
 			children = (
@@ -91,17 +140,8 @@
 			children = (
 				07CBD4EE2B56DAB4000B6B92 /* ScrumdingerApp.swift */,
 				07CBD4FC2B56E4A0000B6B92 /* Models */,
-				07CBD4F02B56DAB4000B6B92 /* MeetingView.swift */,
-				072D1D182B63663C00C166E1 /* MeetingFooterView.swift */,
-				07CA18B02B635BE400F95D21 /* MeetingHeaderView.swift */,
-				07CA18B22B63613D00F95D21 /* ScrumProgressViewStyle.swift */,
-				07CBD5012B56E67E000B6B92 /* CardView.swift */,
-				07AD90F82B5AC8E300406500 /* ScrumsView.swift */,
-				07AD90FA2B5ACE8200406500 /* DetailView.swift */,
-				07AD90FE2B5AFD7500406500 /* ThemeView.swift */,
-				07AD91002B5AFDF000406500 /* ThemePickerView.swift */,
-				07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */,
-				07AD90FC2B5AEA4A00406500 /* DetailEditView.swift */,
+				072D1D202B6371C900C166E1 /* Styles */,
+				072D1D1F2B63719E00C166E1 /* Views */,
 				072D1D1C2B63708900C166E1 /* Resources */,
 				07CBD4F22B56DABC000B6B92 /* Assets.xcassets */,
 				07CBD4F42B56DABC000B6B92 /* Preview Content */,
