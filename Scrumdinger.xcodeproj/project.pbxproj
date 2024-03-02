@@ -27,6 +27,7 @@
 		07E198232B5941DE008CC276 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */; };
 		07F8136C2B63ED8800CA90FC /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8136B2B63ED8800CA90FC /* NewScrumSheet.swift */; };
 		C6684F652B936A5200E16797 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6684F642B936A5200E16797 /* AVPlayer+Ding.swift */; };
+		C6684F672B93AB6500E16797 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6684F662B93AB6500E16797 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		07F8136B2B63ED8800CA90FC /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		C6684F642B936A5200E16797 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		C6684F662B93AB6500E16797 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				07CBD4FF2B56E550000B6B92 /* DailyScrum.swift */,
 				072D1D162B6364B200C166E1 /* ScrumTimer.swift */,
 				C6684F642B936A5200E16797 /* AVPlayer+Ding.swift */,
+				C6684F662B93AB6500E16797 /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6684F672B93AB6500E16797 /* History.swift in Sources */,
 				07CBD5002B56E550000B6B92 /* DailyScrum.swift in Sources */,
 				07CA18B32B63613D00F95D21 /* ScrumProgressViewStyle.swift in Sources */,
 				072D1D192B63663C00C166E1 /* MeetingFooterView.swift in Sources */,

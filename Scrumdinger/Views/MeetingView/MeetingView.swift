@@ -11,11 +11,16 @@ import AVFoundation
 
 struct MeetingView: View {
     
+    // MARK: - Internal Methods
+    
     @Binding var scrum: DailyScrum
     @StateObject var scrumTimer: ScrumTimer = .init()
     
+    // MARK: - Private Properties
+    
     private var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
+    // MARK: - View Body
     
     var body: some View {
         
@@ -38,19 +43,27 @@ struct MeetingView: View {
         }
         .padding()
         .foregroundStyle(scrum.theme.accentColor)
-        .onAppear {
-            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-            scrumTimer.speakerChangedAction = {
-                player.seek(to: .zero)
-                player.play()
-            }
-            scrumTimer.startScrum()
-        }
-        .onDisappear {
-            scrumTimer.stopScrum()
-        }
+        .onAppear { startScrum() }
+        .onDisappear { endScrum() }
         .navigationBarTitleDisplayMode(.inline)
         
+    }
+    
+    // MARK: - Private Methods
+    
+    private func startScrum() {
+        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.speakerChangedAction = {
+            player.seek(to: .zero)
+            player.play()
+        }
+        scrumTimer.startScrum()
+    }
+    
+    private func endScrum() {
+        scrumTimer.stopScrum()
+        let newHistory = History(attendee: scrum.attendees)
+        scrum.history.insert(newHistory, at: .zero)
     }
 }
 

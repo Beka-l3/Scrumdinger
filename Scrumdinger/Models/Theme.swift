@@ -10,6 +10,8 @@ import SwiftUI
 
 enum Theme: String, CaseIterable, Identifiable {
     
+    // MARK: - Cases
+    
     case bubblegum
     case buttercup
     case indigo
@@ -27,6 +29,8 @@ enum Theme: String, CaseIterable, Identifiable {
     case teal
     case yellow
     
+    // MARK: - Internal Properties
+    
     var accentColor: Color {
         switch self {
             
@@ -39,16 +43,7 @@ enum Theme: String, CaseIterable, Identifiable {
         }
     }
     
-    var mainColor: Color {
-        Color(rawValue)
-    }
-    
-    var name: String {
-        rawValue.capitalized
-    }
-    
-    var id: String {
-        name
-    }
-    
+    var mainColor: Color { Color(rawValue) }
+    var name: String { rawValue.capitalized }
+    var id: String { name }
 }
