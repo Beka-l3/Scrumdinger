@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		072D1D172B6364B300C166E1 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1D162B6364B200C166E1 /* ScrumTimer.swift */; };
 		072D1D192B63663C00C166E1 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1D182B63663C00C166E1 /* MeetingFooterView.swift */; };
-		072D1D1B2B636FD400C166E1 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D1D1A2B636FD400C166E1 /* AVPlayer+Ding.swift */; };
 		072D1D1E2B63708A00C166E1 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 072D1D1D2B63708900C166E1 /* ding.wav */; };
 		07AD90F92B5AC8E300406500 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD90F82B5AC8E300406500 /* ScrumsView.swift */; };
 		07AD90FB2B5ACE8200406500 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD90FA2B5ACE8200406500 /* DetailView.swift */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		072D1D162B6364B200C166E1 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		072D1D182B63663C00C166E1 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
-		072D1D1A2B636FD400C166E1 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AVPlayer+Ding.swift"; path = "../../../../Downloads/ManagingStateAndLifeCycle/StartingProject/Scrumdinger/Models/AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		072D1D1D2B63708900C166E1 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		07AD90F82B5AC8E300406500 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		07AD90FA2B5ACE8200406500 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 				07CBD4FD2B56E4B6000B6B92 /* Theme.swift */,
 				07CBD4FF2B56E550000B6B92 /* DailyScrum.swift */,
 				072D1D162B6364B200C166E1 /* ScrumTimer.swift */,
-				072D1D1A2B636FD400C166E1 /* AVPlayer+Ding.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 				07E198232B5941DE008CC276 /* TrailingIconLabelStyle.swift in Sources */,
 				07AD90FF2B5AFD7500406500 /* ThemeView.swift in Sources */,
 				07CBD5022B56E67E000B6B92 /* CardView.swift in Sources */,
-				072D1D1B2B636FD400C166E1 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
