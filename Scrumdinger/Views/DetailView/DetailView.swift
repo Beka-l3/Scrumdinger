@@ -97,8 +97,6 @@ struct DetailView: View {
         }
     }
     
-    // MARK: - Private Methods
-    
 }
 
 
