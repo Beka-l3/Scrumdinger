@@ -26,6 +26,7 @@
 		07CBD5022B56E67E000B6B92 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CBD5012B56E67E000B6B92 /* CardView.swift */; };
 		07E198232B5941DE008CC276 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */; };
 		07F8136C2B63ED8800CA90FC /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8136B2B63ED8800CA90FC /* NewScrumSheet.swift */; };
+		C6684F652B936A5200E16797 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6684F642B936A5200E16797 /* AVPlayer+Ding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		07CBD5012B56E67E000B6B92 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		07E198222B5941DE008CC276 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		07F8136B2B63ED8800CA90FC /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
+		C6684F642B936A5200E16797 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				07CBD4FD2B56E4B6000B6B92 /* Theme.swift */,
 				07CBD4FF2B56E550000B6B92 /* DailyScrum.swift */,
 				072D1D162B6364B200C166E1 /* ScrumTimer.swift */,
+				C6684F642B936A5200E16797 /* AVPlayer+Ding.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				072D1D192B63663C00C166E1 /* MeetingFooterView.swift in Sources */,
 				07AD90FB2B5ACE8200406500 /* DetailView.swift in Sources */,
 				07AD90FD2B5AEA4A00406500 /* DetailEditView.swift in Sources */,
+				C6684F652B936A5200E16797 /* AVPlayer+Ding.swift in Sources */,
 				07CA18B12B635BE400F95D21 /* MeetingHeaderView.swift in Sources */,
 				07CBD4FE2B56E4B6000B6B92 /* Theme.swift in Sources */,
 				07CBD4F12B56DAB4000B6B92 /* MeetingView.swift in Sources */,

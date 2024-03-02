@@ -38,7 +38,7 @@ struct ScrumsView: View {
                 .accessibilityLabel("New Scrum")
             }
             .sheet(isPresented: $isPresentingNewScrumView) {
-                
+                NewScrumSheet(isPresentingNewScrumSheet: $isPresentingNewScrumView, scrums: $scrums)
             }
         }
         
