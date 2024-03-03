@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DailyScrum: Identifiable {
+struct DailyScrum: Identifiable, Codable {
     
     // MARK: - Internal Properties
     
@@ -39,7 +39,7 @@ extension DailyScrum {
     
     // MARK: - Nested Type
     
-    struct Attendee: Identifiable {
+    struct Attendee: Identifiable, Codable {
         let id: UUID
         var name: String
         
