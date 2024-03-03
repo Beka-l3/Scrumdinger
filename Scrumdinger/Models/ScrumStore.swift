@@ -29,6 +29,16 @@ class ScrumStore: ObservableObject {
         self.scrums = scrums
     }
     
+    func save(scrums: [DailyScrum]) async throws {
+        let task = Task {
+            let data = try JSONEncoder().encode(scrums)
+            let outFile = try Self.fileURL()
+            try data.write(to: outFile)
+        }
+        
+        _ = try await task.value
+    }
+    
     // MARK: - Private Methods
     
     private static func fileURL() throws -> URL {
