@@ -13,10 +13,12 @@ struct ScrumsView: View {
     // MARK: - Internal Properties
     
     @Binding var scrums: [DailyScrum]
+    let saveAction: () -> Void
     
     // MARK: - Private Properties
     
     @State private var isPresentingNewScrumView: Bool = false
+    @Environment(\.scenePhase) private var scenePhase
     
     // MARK: - View Body
     
@@ -40,6 +42,9 @@ struct ScrumsView: View {
             .sheet(isPresented: $isPresentingNewScrumView) {
                 NewScrumSheet(isPresentingNewScrumSheet: $isPresentingNewScrumView, scrums: $scrums)
             }
+            .onChange(of: scenePhase) { phase in
+                if phase == .inactive { saveAction() }
+            }
         }
     }
     
@@ -49,5 +54,5 @@ struct ScrumsView: View {
 // MARK: - Preview
 
 #Preview {
-    ScrumsView(scrums: .constant(DailyScrum.sampleData))
+    ScrumsView(scrums: .constant(DailyScrum.sampleData)) { }
 }
