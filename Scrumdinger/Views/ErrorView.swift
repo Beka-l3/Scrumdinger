@@ -13,26 +13,37 @@ struct ErrorView: View {
     
     let errorWrapper: ErrorWrapper
     
+    // MARK: - Private Properties
+    
+    @Environment(\.dismiss) private var dismiss
+    
     // MARK: - View Body
     
     var body: some View {
-        VStack {
-            Text("An error has occurred!")
-                .font(.title)
-                .padding(.bottom)
-            
-            Text(errorWrapper.error.localizedDescription)
-                .font(.headline)
-            
-            Text(errorWrapper.guidance)
-                .font(.caption)
-                .padding(.top)
-            
-            Spacer()
+        NavigationStack {
+            VStack {
+                Text("An error has occurred!")
+                    .font(.title)
+                    .padding(.bottom)
+                
+                Text(errorWrapper.error.localizedDescription)
+                    .font(.headline)
+                
+                Text(errorWrapper.guidance)
+                    .font(.caption)
+                    .padding(.top)
+                
+                Spacer()
+            }
+            .padding()
+            .background(.ultraThinMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Dismiss") { dismiss() }
+                }
+            }
         }
-        .padding()
-        .background(.ultraThinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 16))
     }
     
 }
