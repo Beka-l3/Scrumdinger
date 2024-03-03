@@ -10,12 +10,12 @@ import SwiftUI
 
 struct TrailingIconLabelStyle: LabelStyle {
     
+    // MARK: - Internal Methods
+    
     func makeBody(configuration: Configuration) -> some View {
         HStack {
-            
             configuration.title
             configuration.icon
-            
         }
     }
     

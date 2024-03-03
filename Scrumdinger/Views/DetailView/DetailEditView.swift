@@ -9,14 +9,18 @@ import SwiftUI
 
 struct DetailEditView: View {
     
+    // MARK: - Internal Properties
+    
     @Binding var scrum: DailyScrum
+    
+    // MARK: - Private Properties
+    
     @State private var newAttendeeName: String = ""
     
+    // MARK: - View Body
     
     var body: some View {
-        
         Form {
-            
             Section {
                 TextField("Title", text: $scrum.title)
                 
@@ -36,7 +40,6 @@ struct DetailEditView: View {
             }
             
             Section {
-                
                 ForEach(scrum.attendees) { attendee in
                     Text(attendee.name)
                 }
@@ -45,7 +48,6 @@ struct DetailEditView: View {
                 }
                 
                 HStack {
-                    
                     TextField("New Attendee", text: $newAttendeeName)
                     
                     Button {
@@ -57,18 +59,18 @@ struct DetailEditView: View {
                         Image(systemName: "plus.circle.fill")
                     }
                     .disabled(newAttendeeName.isEmpty)
-                    
                 }
                 
             } header: {
                 Text("Attendees")
             }
-            
-            
         }
-        
     }
+    
 }
+
+
+// MARK: - Preview
 
 #Preview {
     DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))

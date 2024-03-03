@@ -49,6 +49,10 @@ struct MeetingView: View {
         
     }
     
+}
+
+extension MeetingView {
+    
     // MARK: - Private Methods
     
     private func startScrum() {
@@ -67,6 +71,8 @@ struct MeetingView: View {
     }
 }
 
+
+// MARK: - Preview
 
 #Preview {
     MeetingView(scrum: .constant(DailyScrum.sampleData[0]))

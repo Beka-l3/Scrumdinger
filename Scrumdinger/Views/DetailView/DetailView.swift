@@ -100,6 +100,8 @@ struct DetailView: View {
 }
 
 
+// MARK: - Preview
+
 #Preview {
     NavigationStack {
         DetailView(scrum: .constant(DailyScrum.sampleData[0]))

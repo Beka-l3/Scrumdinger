@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ThemeView: View {
     
+    // MARK: - Internal Properties
+    
     let theme: Theme
+    
+    // MARK: - View Body
     
     var body: some View {
         Text(theme.name)
@@ -20,7 +24,11 @@ struct ThemeView: View {
             .foregroundColor(theme.accentColor)
             .clipShape(RoundedRectangle(cornerRadius: 4))
     }
+    
 }
+
+
+// MARK: - Preview
 
 #Preview {
     ThemeView(theme: .buttercup)

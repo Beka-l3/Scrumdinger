@@ -9,9 +9,12 @@ import SwiftUI
 
 struct MeetingFooterView: View {
     
+    // MARK: - Internal Properties
+    
     let speakers: [ScrumTimer.Speaker]
     var skipAction: () -> Void
     
+    // MARK: - View Body
     
     var body: some View {
         VStack {
@@ -30,17 +33,18 @@ struct MeetingFooterView: View {
         }
         .padding([.bottom, .horizontal])
     }
+    
 }
 
 extension MeetingFooterView {
     
+    // MARK: - Private Properties
+    
+    private var isLastSpeaker: Bool { speakers.dropLast().allSatisfy { $0.isCompleted } }
+    
     private var speakerNumber: Int? {
         guard let index = speakers.firstIndex(where: { !$0.isCompleted }) else { return nil }
         return index + 1
-    }
-    
-    private var isLastSpeaker: Bool {
-        return speakers.dropLast().allSatisfy { $0.isCompleted }
     }
     
     private var speakerText: String {
@@ -50,9 +54,10 @@ extension MeetingFooterView {
     
 }
 
+
+// MARK: - Preview
+
 #Preview {
-    MeetingFooterView(speakers: DailyScrum.sampleData[0].attendees.speakers) {
-        
-    }
-    .previewLayout(.sizeThatFits)
+    MeetingFooterView(speakers: DailyScrum.sampleData[0].attendees.speakers) { }
+        .previewLayout(.sizeThatFits)
 }
