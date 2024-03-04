@@ -8,7 +8,6 @@
 import SwiftUI
 import AVFoundation
 
-
 struct MeetingView: View {
     
     // MARK: - Internal Methods
@@ -35,8 +34,7 @@ struct MeetingView: View {
                     theme: scrum.theme
                 )
                 
-                Circle()
-                    .strokeBorder(lineWidth: 24)
+                MeetingTimerView(speakers: scrumTimer.speakers, theme: scrum.theme)
                 
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
