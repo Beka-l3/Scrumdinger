@@ -35,7 +35,7 @@ struct MeetingView: View {
                     theme: scrum.theme
                 )
 
-                MeetingTimerView(speakers: scrumTimer.speakers, theme: scrum.theme)
+                MeetingTimerView(speakers: scrumTimer.speakers, isRecoring: isRecording, theme: scrum.theme)
 
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }

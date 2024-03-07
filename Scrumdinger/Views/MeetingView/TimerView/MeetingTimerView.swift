@@ -12,6 +12,7 @@ struct MeetingTimerView: View {
     // MARK: - Internal Properties
     
     let speakers: [ScrumTimer.Speaker]
+    let isRecoring: Bool
     let theme: Theme
     
     // MARK: - Private Properties
@@ -29,6 +30,10 @@ struct MeetingTimerView: View {
                         .font(.title)
                     
                     Text("is speaking")
+                    Image(systemName: isRecoring ? "mic" : "mic.slash")
+                        .font(.title)
+                        .padding(.top)
+                        .accessibilityLabel(isRecoring ? "with transcription" : "without transcription")
                 }
                 .accessibilityElement(children: .combine)
                 .foregroundStyle(theme.accentColor)
@@ -60,5 +65,5 @@ fileprivate let mockSpeakers: [ScrumTimer.Speaker] = [
 ]
 
 #Preview {
-    MeetingTimerView(speakers: mockSpeakers, theme: .yellow)
+    MeetingTimerView(speakers: mockSpeakers, isRecoring: true, theme: .yellow)
 }
