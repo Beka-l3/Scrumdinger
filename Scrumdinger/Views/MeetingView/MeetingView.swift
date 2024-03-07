@@ -70,7 +70,7 @@ extension MeetingView {
         speechRecognizer.stopTranscribing()
         isRecording = false
 
-        let newHistory = History(attendee: scrum.attendees)
+        let newHistory = History(attendees: scrum.attendees, transcript: speechRecognizer.transcript)
         scrum.history.insert(newHistory, at: .zero)
     }
 }

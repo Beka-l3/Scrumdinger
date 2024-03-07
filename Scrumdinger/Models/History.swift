@@ -13,13 +13,15 @@ struct History: Identifiable, Codable {
     
     let id: UUID
     let date: Date
-    let attendee: [DailyScrum.Attendee]
+    var attendees: [DailyScrum.Attendee]
+    var transcript: String?
     
     // MARK: - Initializer
     
-    init(id: UUID = .init(), date: Date = .init(), attendee: [DailyScrum.Attendee]) {
+    init(id: UUID = .init(), date: Date = .init(), attendees: [DailyScrum.Attendee], transcript: String? = nil) {
         self.id = id
         self.date = date
-        self.attendee = attendee
+        self.attendees = attendees
+        self.transcript = transcript
     }
 }
