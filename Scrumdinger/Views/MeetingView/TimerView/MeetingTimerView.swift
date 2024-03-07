@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct MeetingTimerView: View {
-    
+
     // MARK: - Internal Properties
-    
+
     let speakers: [ScrumTimer.Speaker]
     let isRecoring: Bool
     let theme: Theme
-    
+
     // MARK: - Private Properties
-    
+
     private var currentSpeaker: String { speakers.first { !$0.isCompleted }?.name ?? "Someone" }
-    
+
     // MARK: - View Body
-    
+
     var body: some View {
         Circle()
             .strokeBorder(lineWidth: 24)
@@ -28,7 +28,7 @@ struct MeetingTimerView: View {
                 VStack {
                     Text(currentSpeaker)
                         .font(.title)
-                    
+
                     Text("is speaking")
                     Image(systemName: isRecoring ? "mic" : "mic.slash")
                         .font(.title)
@@ -52,7 +52,6 @@ struct MeetingTimerView: View {
             }
             .padding(.horizontal)
     }
-    
 }
 
 
